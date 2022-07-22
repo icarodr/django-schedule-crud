@@ -9,6 +9,12 @@
 
 <body>
     <h1>Home</h1>
+	<ul>
+		{% for d in agenda %}
+		<li>ID - {{d.id}}, {{d.nome}}</li>
+		{% endfor %}
+	</ul>
+	
 </body>
 
 </html>
