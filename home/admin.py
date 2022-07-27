@@ -1,5 +1,6 @@
 from django.contrib import admin
 from home.models import Agenda
+from home.models import Curso
 
 class detAgenda(admin.ModelAdmin):
     list_display = ('id', 'nome', 'ativo', 'data')
@@ -9,3 +10,8 @@ class detAgenda(admin.ModelAdmin):
     list_display_links = ('nome',)
     
 admin.site.register(Agenda,detAgenda)
+
+class CursoAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nome')
+
+admin.site.register(Curso, CursoAdmin)

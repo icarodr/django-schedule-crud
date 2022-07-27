@@ -11,13 +11,8 @@
 </head>
 <body>
 
-
-    <h1>Home</h1>
-	<ul>
-		{% for d in agenda %}
-		<li>ID - {{d.id}}, NOME  - {{d.nome}}</li>
-		{% endfor %}
-	</ul>
+    {% include 'menu.html' %}
+    <h1>Detalhes</h1>
 	
 </body>
 </html>
